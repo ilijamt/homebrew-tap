@@ -2,24 +2,24 @@
 class Vht < Formula
   desc "A simple vault helper tool that simplifies the usage of Vault"
   homepage "https://github.com/ilijamt/vht"
-  version "0.4.0"
+  version "0.4.1"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/ilijamt/vht/releases/download/v0.4.0/vht_darwin_x86_64.tar.gz"
-    sha256 "4a28f7325e44163aa32b1e68bd11a2218b32fae1d52ed9b1defd0040dcc4eb22"
+    url "https://github.com/ilijamt/vht/releases/download/v0.4.1/vht_darwin_x86_64.tar.gz"
+    sha256 "e4ae2935245a0996693f698dc13a8746b8a5bc95db0ba5bb0d872012f75bcff6"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/ilijamt/vht/releases/download/v0.4.0/vht_linux_x86_64.tar.gz"
-      sha256 "be01a724475e9d4122000bf76370172d74a52ddc0d7c348599c8009e27c2ada7"
+      url "https://github.com/ilijamt/vht/releases/download/v0.4.1/vht_linux_x86_64.tar.gz"
+      sha256 "16f2e53a14c187a7f4e08786dbe147ee571eaa119bd2c0cfafa266e3bf82e1fb"
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ilijamt/vht/releases/download/v0.4.0/vht_linux_arm64.tar.gz"
-        sha256 "4af6c651a01333c1f240f95ece07e12bb20655bfca2f7122499ca833694bdb37"
+        url "https://github.com/ilijamt/vht/releases/download/v0.4.1/vht_linux_arm64.tar.gz"
+        sha256 "0249796aec37ee733964670378ec757b65144ad2a451e06829fa73b782079e88"
       else
-        url "https://github.com/ilijamt/vht/releases/download/v0.4.0/vht_linux_armv6.tar.gz"
-        sha256 "edc7ae6f7586d9b7898600f0e0ee9e767ecbfe8bbc6b46562eb54b9fa72dd39b"
+        url "https://github.com/ilijamt/vht/releases/download/v0.4.1/vht_linux_armv6.tar.gz"
+        sha256 "6d309e8ca3084241b41e3e1942b48924280f2641fd954130304b57effd4f1d2d"
       end
     end
   end
