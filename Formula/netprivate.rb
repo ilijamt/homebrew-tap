@@ -5,20 +5,20 @@
 class Netprivate < Formula
   desc "A small library to test if an IP address is in the private or public range for both IPv4 and IPv6."
   homepage "https://github.com/ilijamt/blacklist-checker"
-  version "0.2.0"
+  version "1.0.0"
 
   on_macos do
-    if Hardware::CPU.intel?
-      url "https://github.com/ilijamt/netprivate/releases/download/v0.2.0/netprivate_darwin_x86_64.tar.gz"
-      sha256 "dd27ff5624bae7d5b7f8b8362f5a47ec936fb777f63f3550f2bdf4a3ffa4d5d7"
+    if Hardware::CPU.arm?
+      url "https://github.com/ilijamt/netprivate/releases/download/v1.0.0/netprivate_darwin_arm64.tar.gz"
+      sha256 "670e5f9b0248b3c618767ee46a0724123547d1c4626a8b852d1aeea3a488c198"
 
       def install
         bin.install "is-private"
       end
     end
-    if Hardware::CPU.arm?
-      url "https://github.com/ilijamt/netprivate/releases/download/v0.2.0/netprivate_darwin_arm64.tar.gz"
-      sha256 "2a9f468abacc5d4a7710e185bee1a6ba9f8646c60c292029fd0437a373e277ce"
+    if Hardware::CPU.intel?
+      url "https://github.com/ilijamt/netprivate/releases/download/v1.0.0/netprivate_darwin_x86_64.tar.gz"
+      sha256 "e36062532e970e5f6c3d7f1c23f6237abe64b2f3ded80338a4bb0a6533a4c163"
 
       def install
         bin.install "is-private"
@@ -28,24 +28,24 @@ class Netprivate < Formula
 
   on_linux do
     if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-      url "https://github.com/ilijamt/netprivate/releases/download/v0.2.0/netprivate_linux_armv6.tar.gz"
-      sha256 "e16a97168e553c1547ec1cc2f98131835cdc550594764b66d85f55f3085fccee"
+      url "https://github.com/ilijamt/netprivate/releases/download/v1.0.0/netprivate_linux_armv6.tar.gz"
+      sha256 "56beadbb05cd40481d408273cf29d9027a9e69de12560f744e501015a11b4677"
 
       def install
         bin.install "is-private"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ilijamt/netprivate/releases/download/v0.2.0/netprivate_linux_arm64.tar.gz"
-      sha256 "106b0de03b3ecba04eed87ef5f2b70eb5b20105cc2ae7ebb0c4e5f6677176fc6"
+      url "https://github.com/ilijamt/netprivate/releases/download/v1.0.0/netprivate_linux_arm64.tar.gz"
+      sha256 "a2a5a98c74cb367f25e8102b40e181de69a3f57d58bdf19ff9a5542dbf38a0ba"
 
       def install
         bin.install "is-private"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/ilijamt/netprivate/releases/download/v0.2.0/netprivate_linux_x86_64.tar.gz"
-      sha256 "fd426fc5f31d69ecee44d9483411a99a2ac785086b6abfc68e2a17470e141717"
+      url "https://github.com/ilijamt/netprivate/releases/download/v1.0.0/netprivate_linux_x86_64.tar.gz"
+      sha256 "88487b174e2d431cb42040f60185b2639975dc05e5815e4466dbf8f0bf9e1084"
 
       def install
         bin.install "is-private"
