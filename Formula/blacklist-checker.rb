@@ -5,20 +5,20 @@
 class BlacklistChecker < Formula
   desc "A simple tool that helps you check if your IP or CIDR is blacklisted or not."
   homepage "https://github.com/ilijamt/blacklist-checker"
-  version "0.2.0"
+  version "0.2.1"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/ilijamt/blacklist-checker/releases/download/v0.2.0/blacklist-checker_darwin_arm64.tar.gz"
-      sha256 "67a80446f7dd2ccdfabc8bb1def94a693d71afd07b1e9fbbf8f5a24fab2fd55e"
+      url "https://github.com/ilijamt/blacklist-checker/releases/download/v0.2.1/blacklist-checker_darwin_arm64.tar.gz"
+      sha256 "160538d82b51212a9f0225888236c8cb39dc33732c239d9018b36025bd596fd1"
 
       def install
         bin.install "blacklist-checker"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/ilijamt/blacklist-checker/releases/download/v0.2.0/blacklist-checker_darwin_x86_64.tar.gz"
-      sha256 "dcd09fdf0c66ddb6d00766e5cdaa67ebda0b4e12befecca92d20045941008db7"
+      url "https://github.com/ilijamt/blacklist-checker/releases/download/v0.2.1/blacklist-checker_darwin_x86_64.tar.gz"
+      sha256 "85a54d8a80b682ac1a0b0bdb198c8eb330a39f8e994e53be6cc3dea7eccda180"
 
       def install
         bin.install "blacklist-checker"
@@ -28,24 +28,24 @@ class BlacklistChecker < Formula
 
   on_linux do
     if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-      url "https://github.com/ilijamt/blacklist-checker/releases/download/v0.2.0/blacklist-checker_linux_armv6.tar.gz"
-      sha256 "b912f10d8bc8429b679fc74eb3dff6eb94867bdf5ff4766e005ad125b4bc7fc8"
+      url "https://github.com/ilijamt/blacklist-checker/releases/download/v0.2.1/blacklist-checker_linux_armv6.tar.gz"
+      sha256 "3487d72f06eec9f9de69fe2ada01bebe05a5f6ed0d1566a2d283afc709ada440"
 
       def install
         bin.install "blacklist-checker"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ilijamt/blacklist-checker/releases/download/v0.2.0/blacklist-checker_linux_arm64.tar.gz"
-      sha256 "869bbf88c4cd286dc12c198a7685110b34bde6f31fc832d96420ed0c11bc7716"
+      url "https://github.com/ilijamt/blacklist-checker/releases/download/v0.2.1/blacklist-checker_linux_arm64.tar.gz"
+      sha256 "8b5b1a822eff2ccb5351a3c4a0afd311c362c77e645a9f4a942465041564e762"
 
       def install
         bin.install "blacklist-checker"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/ilijamt/blacklist-checker/releases/download/v0.2.0/blacklist-checker_linux_x86_64.tar.gz"
-      sha256 "6d245ce48b564eb185c63134956f5cd726c93380040639e24522c782ee6d8aa1"
+      url "https://github.com/ilijamt/blacklist-checker/releases/download/v0.2.1/blacklist-checker_linux_x86_64.tar.gz"
+      sha256 "b768d94907e236bd19e8d655dafad8851cc65d72d039a7eab49678ffe4bc29b7"
 
       def install
         bin.install "blacklist-checker"
