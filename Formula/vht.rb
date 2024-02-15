@@ -5,20 +5,20 @@
 class Vht < Formula
   desc "A simple vault helper tool that simplifies the usage of Vault"
   homepage "https://github.com/ilijamt/vht"
-  version "0.5.3"
+  version "0.6.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/ilijamt/vht/releases/download/v0.5.3/vht_0.5.3_darwin_arm64.tar.gz"
-      sha256 "98c929677b48cbcd32374cd42ad63696efcf29dcb1d16390ddc3d2c1894d77ef"
+      url "https://github.com/ilijamt/vht/releases/download/v0.6.0/vht_0.6.0_darwin_arm64.tar.gz"
+      sha256 "53779eee8c86e809a82abde6566b42e7583301b8370fa33306094aa04c551864"
 
       def install
         bin.install "vht"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/ilijamt/vht/releases/download/v0.5.3/vht_0.5.3_darwin_amd64.tar.gz"
-      sha256 "712b5e8594289f0d53deec8859e9acbfbcaae96e3ad937978adb51be9ff618c4"
+      url "https://github.com/ilijamt/vht/releases/download/v0.6.0/vht_0.6.0_darwin_amd64.tar.gz"
+      sha256 "b82af821db27e230ff8fe0b9facb447f987fd44723aca53b0739aa83caedd752"
 
       def install
         bin.install "vht"
@@ -28,24 +28,24 @@ class Vht < Formula
 
   on_linux do
     if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-      url "https://github.com/ilijamt/vht/releases/download/v0.5.3/vht_0.5.3_linux_armv6.tar.gz"
-      sha256 "fea4f3174a2edb2aaecb0277a2e9333b861c8775f0c73ec24bacb865a3969a5e"
+      url "https://github.com/ilijamt/vht/releases/download/v0.6.0/vht_0.6.0_linux_armv6.tar.gz"
+      sha256 "243f2a6bc26f189ebf61367c0943f7bcf83e7751692dc5b17a55546e70860e88"
 
       def install
         bin.install "vht"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ilijamt/vht/releases/download/v0.5.3/vht_0.5.3_linux_arm64.tar.gz"
-      sha256 "9e6123f24d1b95c26757c920c5a4ed5fb7d3ade95d8b3fa42eebcce8e56bf6ae"
+      url "https://github.com/ilijamt/vht/releases/download/v0.6.0/vht_0.6.0_linux_arm64.tar.gz"
+      sha256 "28cef1e247e03bb8d13382d0a4c14294d084c49f617ba79248e41bc1135a2bf5"
 
       def install
         bin.install "vht"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/ilijamt/vht/releases/download/v0.5.3/vht_0.5.3_linux_amd64.tar.gz"
-      sha256 "12f21f4b9ddcb347b42d4afc9654a1e842a4c469bc5e99ffa3c555f9711594ad"
+      url "https://github.com/ilijamt/vht/releases/download/v0.6.0/vht_0.6.0_linux_amd64.tar.gz"
+      sha256 "65a43cd2b863cbf1edb01bc2ebc2e2be0d899b73d298138e67a2bb4533ccd3cc"
 
       def install
         bin.install "vht"
