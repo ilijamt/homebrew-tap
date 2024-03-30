@@ -5,20 +5,20 @@
 class VaultTokenHelper < Formula
   desc "A token helper is an external program that Vault calls to save, retrieve or erase a saved token."
   homepage "https://github.com/ilijamt/vault-token-helper"
-  version "0.1.4"
+  version "0.1.7"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ilijamt/vault-token-helper/releases/download/v0.1.4/vault-token-helper_0.1.4_darwin_amd64.tar.gz"
-      sha256 "09843f6907930a332d617fb23f5d207a0121b9cc2d68a42657bfaf450a753d93"
+      url "https://github.com/ilijamt/vault-token-helper/releases/download/v0.1.7/vault-token-helper_0.1.7_darwin_amd64.tar.gz"
+      sha256 "fc580f80f9cfcc3dda888e7b02b3a9774bea63ad2e7a017ca9245a5f1a4ec130"
 
       def install
         bin.install "vault-token-helper"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ilijamt/vault-token-helper/releases/download/v0.1.4/vault-token-helper_0.1.4_darwin_arm64.tar.gz"
-      sha256 "c03b076580952991ab992bd9c16b4cea1bbe4a924cfb7112551a13b0a02c05e5"
+      url "https://github.com/ilijamt/vault-token-helper/releases/download/v0.1.7/vault-token-helper_0.1.7_darwin_arm64.tar.gz"
+      sha256 "32fcf2628a919a5fbbab7ac0d7b8a9237edce1a50490a869a59e58153159dd27"
 
       def install
         bin.install "vault-token-helper"
@@ -28,24 +28,24 @@ class VaultTokenHelper < Formula
 
   on_linux do
     if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-      url "https://github.com/ilijamt/vault-token-helper/releases/download/v0.1.4/vault-token-helper_0.1.4_linux_armv6.tar.gz"
-      sha256 "3f942490e1ca96525824a49d280a99bff17b11add67429bec533ab1960ead0ff"
+      url "https://github.com/ilijamt/vault-token-helper/releases/download/v0.1.7/vault-token-helper_0.1.7_linux_armv6.tar.gz"
+      sha256 "b0d0708329327ea4161daca4b9d3421653ec4de15c2981791444e31aad14f20e"
 
       def install
         bin.install "vault-token-helper"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ilijamt/vault-token-helper/releases/download/v0.1.4/vault-token-helper_0.1.4_linux_arm64.tar.gz"
-      sha256 "963580e535d99e9f83b0130c0b92bcf5ef72509d35915f05b95699b1441af8c0"
+      url "https://github.com/ilijamt/vault-token-helper/releases/download/v0.1.7/vault-token-helper_0.1.7_linux_arm64.tar.gz"
+      sha256 "48d960b565eafb7c6c03e900d96004c2016772866a419e14b19dba8032b8a28c"
 
       def install
         bin.install "vault-token-helper"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/ilijamt/vault-token-helper/releases/download/v0.1.4/vault-token-helper_0.1.4_linux_amd64.tar.gz"
-      sha256 "f1cb1f137c3bb49223272c321e8e1f7053966142811c1767b00e7adb646e8e22"
+      url "https://github.com/ilijamt/vault-token-helper/releases/download/v0.1.7/vault-token-helper_0.1.7_linux_amd64.tar.gz"
+      sha256 "86f2f4b3f72dfc200cf9ee3fd820f124bad142beb8f79fa422d467a71887ead8"
 
       def install
         bin.install "vault-token-helper"
