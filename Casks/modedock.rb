@@ -1,6 +1,6 @@
 cask "modedock" do
-  version "0.1.0"
-  sha256 "e13c5e370b66f12dce5b1937ee1ae19b38be7f47e92058ac05ac72dfedd6f020"
+  version "0.1.1"
+  sha256 "2a8c67fca5405e5536b7f149e231f76476ee5259d5c4475c9a05387417bcbeeb"
 
   url "https://github.com/ilijamt/modedock/releases/download/v#{version}/ModeDock-#{version}.dmg"
   name "ModeDock"
